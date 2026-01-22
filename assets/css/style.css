@@ -1329,20 +1329,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  /* 2. Khi di chuột vào KHUNG thì phóng to cả KHUNG */
-  .avatar-box:hover {
-    transform: scale(1.5); /* Phóng to khung lên 300% */
-    z-index: 100;        /* Đưa lên lớp cao nhất để không bị chữ che */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Thêm bóng đổ cho nổi bật */
-    cursor: zoom-in;
-  }
-
-  /* 3. Reset lại ảnh bên trong (không cần phóng to ảnh nữa vì khung đã to rồi) */
-  .avatar-box img {
-    width: 100%;
-    display: block;
-    /* Bỏ transition/transform cũ ở img đi nếu có */
-  }
+  .avatar-box img { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
